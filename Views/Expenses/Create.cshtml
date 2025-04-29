@@ -1,0 +1,20 @@
+﻿@model MyFinanceApp.Models.Expense
+
+<div class="container">
+    <h2>新增消費</h2>
+    <form asp-action="Create" method="post">
+        <div>
+            <label asp-for="Description" class="form-label">內容</label>
+            <input asp-for="Description" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Amount" class="form-label">價格</label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Category" class="form-label">類別</label>
+            <input asp-for="Category" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">新增</button>
+    </form>
+</div>
