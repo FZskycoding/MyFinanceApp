@@ -43,5 +43,12 @@ namespace MyFinanceApp.Controllers
             var data = _expensesService.GetChartData();
             return Json(data);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _expensesService.Delete(id);
+            return RedirectToAction("Index");
+        }
     }
 }

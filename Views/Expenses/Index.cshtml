@@ -22,6 +22,12 @@
                     <td>@item.Amount $</td>
                     <td>@item.Category</td>
                     <td>@item.Date.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <form asp-action="Delete" method="post">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger">刪除</button>
+                        </form>
+                    </td>
                 </tr>
             }
         </tbody>

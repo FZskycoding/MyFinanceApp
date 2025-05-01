@@ -33,5 +33,15 @@ namespace MyFinanceApp.Data.Service
                                                        });
             return data;
         }
+
+        public async Task<bool> Delete(int id)
+        {
+            var expense = await _context.Expenses.FindAsync(id);
+            if (expense == null) return false;
+            
+            _context.Expenses.Remove(expense);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }
