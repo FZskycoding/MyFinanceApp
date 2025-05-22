@@ -1,0 +1,49 @@
+.expenses-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.btn-primary {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 8px 24px;
+}
+
+.table-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.table {
+    margin-bottom: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+.btn-danger {
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 4px 16px;
+}
+
+@media (max-width: 768px) {
+    .table-container, .container {
+        padding: 8px;
+    }
+
+    .expenses-header {
+        font-size: 1.3rem;
+    }
+}
